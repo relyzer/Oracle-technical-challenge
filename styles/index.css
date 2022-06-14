@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  body {
+    @apply p-0 m-0 flex flex-col;
+  }
+
+  #__next {
+    @apply p-0 m-0 flex flex-col min-h-screen;
+  }
+
+  * {
+    @apply box-border font-serif;
+  }
+
+}
+
+@layer components {
+
+}
+
+@layere utilities {
+
+}
