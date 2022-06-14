@@ -16,6 +16,14 @@
     @apply box-border font-serif;
   }
 
+  h1 {
+    @apply text-3xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+  
 }
 
 @layer components {

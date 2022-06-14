@@ -1,13 +1,15 @@
 import type { NextPage } from "next";
 import React from "react";
 
-import Layout from "../components/Layout";
-import Footer from "../components/Footer";
+import { Layout, NavBar, HeaderBar, Listing, Footer } from "../components";
 
 const Home: NextPage = () => {
   return (
-    <Layout title="Movie listing">
-       <Footer/>
+    <Layout title="DEMO Streaming">
+      <NavBar />
+      <HeaderBar headerTitle="Popular Titles"/>
+      <Listing  />
+      <Footer />
     </Layout>
   );
 };

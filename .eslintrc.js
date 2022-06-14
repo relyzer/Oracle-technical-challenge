@@ -49,6 +49,8 @@ module.exports = {
     ],
     "react/require-default-props": "off",
     "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/jsx-boolean-value": "off"
   },
   overrides: [
     {
