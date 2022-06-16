@@ -27,9 +27,15 @@
 }
 
 @layer components {
+  .modal-container {
+    @apply bg-slate-800/30 flex justify-center items-center pointer-events-none fixed top-0 left-0 h-screen w-screen;
+  }
 
+  .modal {
+    @apply bg-white w-[500px] max-w-[100%];
+  }
 }
 
-@layere utilities {
+@layer utilities {
 
 }
