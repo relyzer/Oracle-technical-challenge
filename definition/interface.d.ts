@@ -1,16 +1,20 @@
+export interface PosterImage {
+  "Poster Art": {
+    url: string;
+    width: number;
+    height: number;
+  }
+}
+
+export interface Entry {
+  title: string;
+  description: string;
+  programType: string;
+  images: PosterImage
+  releaseYear: number;
+}
+
 export interface Programs {
   total: number;
-  entries: {
-    title: string;
-    description: string;
-    programType: string;
-    images: {
-      "Poster Art": {
-        url: string;
-        width: number;
-        height: number;
-      };
-    };
-    releaseYear: number;
-  }[];
+  entries: Entry[];
 }

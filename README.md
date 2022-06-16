@@ -34,7 +34,10 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 
-## Legal Attribution
+## Legal Attribution  
+
+Error image: Image by Christelle Olivier from Pixabay  
+Placeholder image: Photo by Anika Mikkelson on Unsplash  
 
 App Store and App Store logo are trademarks of Apple Inc.  
 Google Play and the Google Play logo are trademarks of Google LLC.  
