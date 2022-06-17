@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Program } from ".";
+import Program  from "./Program";
 import { Entry } from "../../definition/interface";
 import generateUniqueID from "../../lib/utility/generateUniqueID";
 
@@ -18,6 +18,8 @@ const Listing = ({ programsArr }: Props): JSX.Element => {
             key={generateUniqueID()}
             programTitle={data.title}
             imageUrl={data.images["Poster Art"].url}
+            releaseYear={data.releaseYear}
+            description={data.description}
           />
         ))}
     </div>

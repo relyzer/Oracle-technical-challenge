@@ -77,17 +77,17 @@ const Footer = (): JSX.Element => {
       </p>
       <div className="flex flex-row flex-nowrap items-center pt-6">
         <div className="basis-1/2 flex flex-row space-x-6">
-          <Link href="/" passHref={true}>
+          <Link href="https://www.facebook.com/" passHref={true}>
             <a className="text-white w-8 h-10 flex items-center justify-center scale-[0.6]">
               <FontAwesomeIcon icon={faFacebookF} />
             </a>
           </Link>
-          <Link href="/" passHref={true}>
+          <Link href="https://twitter.com/?lang=en" passHref={true}>
             <a className="text-white w-8 h-10 flex items-center justify-center">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
           </Link>
-          <Link href="/" passHref={true}>
+          <Link href="https://www.instagram.com/" passHref={true}>
             <a className="text-white w-8 h-10 flex items-center justify-center">
               <FontAwesomeIcon icon={faInstagram} />
             </a>

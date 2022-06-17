@@ -18,3 +18,12 @@ export interface Programs {
   total: number;
   entries: Entry[];
 }
+
+export interface NumbersFactResult {
+  text: string;
+  found: boolean;
+  number: number;
+  type: string;
+  date?: string;
+  year?: string;
+}
