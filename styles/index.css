@@ -24,15 +24,19 @@
     @apply text-2xl;
   }
   
+  h3 {
+    @apply text-xl;
+  }
+  
 }
 
 @layer components {
   .modal-container {
-    @apply bg-slate-800/30 flex justify-center items-center pointer-events-none fixed top-0 left-0 h-screen w-screen;
+    @apply bg-slate-800/70 flex justify-center items-center fixed top-0 left-0 h-screen w-screen z-10;
   }
 
   .modal {
-    @apply bg-white w-[500px] max-w-[100%];
+    @apply bg-white p-3 w-[500px] max-w-[100%] m-auto z-20;
   }
 }
 

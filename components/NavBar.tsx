@@ -6,7 +6,9 @@ const NavBar = (): JSX.Element => {
     <nav className="bg-gradient-to-t from-blue-600 to-blue-500 flex flex-row px-32 py-4 items-center">
       <div className="flex justify-start basis-1/2">
         <Link href="/">
-          <h1 className="text-white drop-shadow-lg">DEMO Streaming</h1>
+          <a className="">
+            <h1 className="text-white drop-shadow-lg">DEMO Streaming</h1>
+          </a>
         </Link>
       </div>
       <div className="flex justify-end basis-1/2 items-center">
