@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
+import TextLoader from "../loader/TextLoader";
 import { NumbersFactResult } from "../../definition/interface";
 
 type Props = {
@@ -41,7 +42,11 @@ const PopUpModal = ({
         }
       })
       .catch((error) => setFunFactError(error))
-      .finally(() => setisFunFactLoading(false));
+      .finally(() => {
+        setTimeout(() => {
+          setisFunFactLoading(false);
+        }, 500);
+      });
   }, [releaseYear]);
 
   const handleCloseModal = () => {
@@ -68,23 +73,25 @@ const PopUpModal = ({
         </div>
         <h3 className="text-center font-bold p-2">{movieTitle}</h3>
         <div className="p-2">
-          <p className="text-center">Year of release: {releaseYear}</p>
+          <p className="text-center pb-2">Year of release: {releaseYear}</p>
           <p className="max-w-prose">{description}</p>
         </div>
         <div className="p-2">
-          <h4 className="text-center font-bold underline underline-offset-1">
-            Fun fact about the year of release{" "}
+          <h4 className="text-center font-bold underline underline-offset-1 pb-2">
+            Fun fact about the year of release
           </h4>
-          {isFunFactLoading && (
-            <p className="max-w-prose">Loading fun facts! Please wait...</p>
-          )}
-          {!funFactError ? (
-            <p className="max-w-prose">{funFact}</p>
-          ) : (
+          {/* Loading skeleton */}
+          {isFunFactLoading && <TextLoader />}
+          {/* Error display */}
+          {funFactError && (
             <p className="max-w-prose">
               Uh oh! Unable to retrieve fun facts. <br />
               {`Reason: ${funFactError}`}
             </p>
+          )}
+          {/* Loading done and fun fact retrieved display */}
+          {!isFunFactLoading && funFact && (
+            <p className="max-w-prose">{funFact}</p>
           )}
         </div>
       </div>

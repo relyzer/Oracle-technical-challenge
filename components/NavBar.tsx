@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const NavBar = (): JSX.Element => {
   return (
-    <nav className="bg-gradient-to-t from-blue-600 to-blue-500 flex flex-row px-32 py-4 items-center">
+    <nav className="bg-gradient-to-t from-blue-600 to-blue-500 flex flex-row px-32 py-4 items-center drop-shadow-xl">
       <div className="flex justify-start basis-1/2">
         <Link href="/">
           <a className="">

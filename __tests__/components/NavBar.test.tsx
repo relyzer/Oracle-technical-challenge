@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { render, screen } from "@testing-library/react"
-import NavBar from "../components/NavBar"
+import NavBar from "../../components/NavBar"
 
 test('Title should link to home page', () => {
   render(<NavBar />)

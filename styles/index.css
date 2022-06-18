@@ -27,12 +27,16 @@
   h3 {
     @apply text-xl;
   }
+
+  h4 {
+    @apply text-lg;
+  }
   
 }
 
 @layer components {
   .modal-container {
-    @apply bg-slate-800/70 flex justify-center items-center fixed top-0 left-0 h-screen w-screen z-10;
+    @apply bg-slate-800/70 flex justify-center items-center fixed top-0 left-0 right-0 bottom-0 z-10;
   }
 
   .modal {

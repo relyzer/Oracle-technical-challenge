@@ -1,6 +1,6 @@
 import React from "react";
 
-import Program  from "./Program";
+import Program from "./Program";
 import { Entry } from "../../definition/interface";
 import generateUniqueID from "../../lib/utility/generateUniqueID";
 
@@ -10,12 +10,12 @@ type Props = {
 
 const Listing = ({ programsArr }: Props): JSX.Element => {
   return (
-    <div className="flex flex-row flex-wrap min-h-[60vh] px-32 py-4 gap-4">
+    <div className="flex flex-row flex-wrap min-h-[60vh] px-32 py-8 gap-4">
       {!programsArr && <p>No entries found</p>}
       {programsArr &&
         programsArr.map((data: Entry) => (
           <Program
-            key={generateUniqueID()}
+            id={generateUniqueID()}
             programTitle={data.title}
             imageUrl={data.images["Poster Art"].url}
             releaseYear={data.releaseYear}
