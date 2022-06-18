@@ -14,26 +14,6 @@ import MicrosoftStoreBadge from "../public/assets/English_get it from MS_864X312
 
 const Footer = (): JSX.Element => {
   return (
-    /* <div>
-      <div className="flex flex-row w-80 h-20 space-x-6">
-          <Link href="/" passHref={true}>
-            <a className="text-white w-10 h-10 scale-[0.6] flex items-center justify-center">
-              <FontAwesomeIcon icon={faFacebookF} size="sm" />
-            </a>
-          </Link>
-          <Link href="/" passHref={true}>
-            <a className="text-white w-10 h-10 flex items-center justify-center">
-              <FontAwesomeIcon icon={faTwitter} size="sm" />
-            </a>
-          </Link>
-          <Link href="/" passHref={true}>
-            <a className="text-white w-10 h-10 flex items-center justify-center">
-              <FontAwesomeIcon icon={faInstagram} size="sm" />
-            </a>
-          </Link>
-        </div>
-    </div> */
-
     <footer className="bg-black/90 flex w-full mt-auto flex-col px-32 py-8">
       <nav className="flex flex-row items-center py-2 list-none text-white/60 space-x-4">
         <li>

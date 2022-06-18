@@ -4,7 +4,7 @@ import Image from "next/image";
 import PopUpModal from "./PopUpModal";
 
 type Props = {
-  key: string;
+  id: string;
   programTitle: string;
   imageUrl: string;
   releaseYear: number;
@@ -12,7 +12,7 @@ type Props = {
 };
 
 const Program = ({
-  key,
+  id,
   programTitle,
   imageUrl,
   releaseYear,
@@ -30,7 +30,7 @@ const Program = ({
   };
 
   return (
-    <article className="" key={key}>
+    <article className="" key={id}>
       <div
         className="relative h-60 w-40"
         role="button"
@@ -46,7 +46,7 @@ const Program = ({
           layout="fill"
         />
       </div>
-      <h3 className="max-w-[10rem]">{programTitle}</h3>
+      <h4 className="max-w-[10rem]">{programTitle}</h4>
       {isModalOpen && (
         <PopUpModal
           imageSrc={imageUrl}

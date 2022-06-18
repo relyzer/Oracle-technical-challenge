@@ -1,7 +1,7 @@
 import React from "react";
 
 import { render, screen } from "@testing-library/react";
-import HeaderBar from "../components/HeaderBar";
+import HeaderBar from "../../components/HeaderBar";
 
 // May want to add a default title in this scenario in the component
 // Bring this up to the UX Designer for discussion before implementing
