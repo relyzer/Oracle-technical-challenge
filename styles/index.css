@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-
   body {
     @apply p-0 m-0 flex flex-col;
   }
@@ -23,7 +22,7 @@
   h2 {
     @apply text-2xl;
   }
-  
+
   h3 {
     @apply text-xl;
   }
@@ -31,7 +30,6 @@
   h4 {
     @apply text-lg;
   }
-  
 }
 
 @layer components {
@@ -45,5 +43,4 @@
 }
 
 @layer utilities {
-
 }

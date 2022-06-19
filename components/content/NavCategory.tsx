@@ -18,7 +18,10 @@ const NavCategory = ({ categories }: Props): JSX.Element => {
           return (
             <li key={id}>
               <Link href={categoryLink}>
-                <a className="flex justify-center items-center relative w-40 h-60">
+                <a
+                  className="flex justify-center items-center relative w-40 h-60"
+                  data-testid={`categoryNavLink-${category}`}
+                >
                   <div className="bg-black/80 absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center font-bold text-2xl text-white z-20 uppercase">
                     {category}
                   </div>

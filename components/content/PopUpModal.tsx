@@ -83,10 +83,9 @@ const PopUpModal = ({
           {/* Loading skeleton */}
           {isFunFactLoading && <TextLoader />}
           {/* Error display */}
-          {funFactError && (
+          {!isFunFactLoading && funFactError && (
             <p className="max-w-prose">
               Uh oh! Unable to retrieve fun facts. <br />
-              {`Reason: ${funFactError}`}
             </p>
           )}
           {/* Loading done and fun fact retrieved display */}
