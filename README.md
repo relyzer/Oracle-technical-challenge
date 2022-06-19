@@ -1,4 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Oracle Technical Challenge
+
+A takehome UI React project done by Kevin Tan, as part of Oracle's technical challenge for the position of UI/UX Software Engineer.
+The project had to be completed within 1 week.
+
+Technologies used for this project:  
+- Next.js (React.js)
+- TailwindCSS
+- Redux
+- Jest and React Testing Library
+- Cypress
+
+Languages used: 
+- TypeScript / JavaScript (ES6)
+- HTML5 / CSS3
+
+Other tools:
+- Prettier
+- ESLint (Airbnb config)
+
 
 ## Getting Started
 
@@ -18,14 +37,6 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
@@ -34,11 +45,27 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 
-## Legal Attribution  
+## Legal Attribution
 
 Error image: Image by Christelle Olivier from Pixabay  
 Placeholder image: Photo by Anika Mikkelson on Unsplash  
+Clapperboard imagee: Image by Clker-Free-Vector-Images from Pixabay  
 
 App Store and App Store logo are trademarks of Apple Inc.  
 Google Play and the Google Play logo are trademarks of Google LLC.  
-Microsoft Store and Microsoft Store are trademarks of Microsoft.
+Microsoft Store and Microsoft Store are trademarks of Microsoft.  
+
+## References:
+
+Next.js documentations  
+React documentations  
+React Testing Library and Jest documentations  
+Redux documentation  
+TailwindCSS documentations  
+Tailwind components (for modal implementation) -  www.tailwindcomponents.com  
+
+React testing crash course - https://www.youtube.com/watch?v=OVNjsIto9xM  
+
+Apple badge guideline - https://developer.apple.com/app-store/marketing/guidelines/  
+Google badge guideline - https://play.google.com/intl/en_us/badges/  
+Microsoft badge guideline - https://docs.microsoft.com/en-us/windows/uwp/publish/app-marketing-guidelines  

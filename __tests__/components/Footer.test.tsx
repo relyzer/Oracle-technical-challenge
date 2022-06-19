@@ -99,7 +99,6 @@ describe("Copyright statement in footer", () => {
   });
 });
 
-
 // https://testing-library.com/docs/queries/bytestid/
 // Need to use test-ids for the fontawesome icons and image links
 // Since I had difficulty querying the exact element
@@ -108,13 +107,12 @@ describe("Social media navigation in footer", () => {
   test("should be rendered in the document", () => {
     render(<Footer />);
     // const facebookIcon = container.querySelector('#__next > div > main > footer > div > div:nth-child(1) > a:nth-child(1) > svg > path')
-    expect(screen.findByTestId)
+    expect(screen.findByTestId);
     expect(
       screen.getByText("Copyright © 2016 DEMO Streaming. All Rights Reserved.")
     ).toBeInTheDocument();
   });
 });
-
 
 // describe("App download navigation in footer", () => {
 //   test("should be rendered in the document", () => {

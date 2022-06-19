@@ -1,8 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
 import * as sample from "../../../public/externaldata/sample.json";
-import { Programs } from "../../../definition/interface"
-
+import { Programs } from "../../../definition/interface";
 
 const programListHandler = (
   req: NextApiRequest,

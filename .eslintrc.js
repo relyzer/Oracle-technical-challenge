@@ -52,7 +52,7 @@ module.exports = {
     "jsx-a11y/anchor-is-valid": "off",
     "react/jsx-boolean-value": "off",
     // https://stackoverflow.com/questions/44939304/eslint-should-be-listed-in-the-projects-dependencies-not-devdependencies
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
+    "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
   },
   overrides: [
     {

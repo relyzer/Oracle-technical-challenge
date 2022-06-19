@@ -1,33 +1,50 @@
 import type { NextPage } from "next";
-import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 // import sample from "../public/externaldata/sample.json"
+
+import { useAppSelector, useAppDispatch } from "../redux-hooks/hooks";
+import { addPrograms } from "../redux-reducers/programSlice";
+import { addMovies } from "../redux-reducers/moviesSlice";
 
 import { Programs } from "../definition/interface";
 import { Layout, NavBar, HeaderBar, Footer } from "../components";
 import { Listing } from "../components/content";
-import filterProgramType from "../lib/utility/filterProgramType"
+import filterProgramType from "../lib/utility/filterProgramType";
+import ContentLoader from "../components/loader/ContentLoader";
 
-export const getStaticProps: GetStaticProps = async () => {
-  const res = await fetch(`http://localhost:3000/api/program/programlist`)
-  const programs: Programs = await res.json()
+const Movies: NextPage = () => {
+  const { programs } = useAppSelector((state) => state.program);
+  const dispatch = useAppDispatch();
 
-  // const programs: Programs = sample;
-  return {
-    props: {
-      programs,
-    },
-  }
-}
-
-const Movies: NextPage = ({ programs }: InferGetStaticPropsType<typeof getStaticProps>) => {
+  const [isLoading, setIsLoading] = useState(true);
   const filteredArr = filterProgramType(programs.entries, "movie");
+  dispatch(addMovies(filteredArr));
+
+  useEffect(() => {
+    fetch("/api/program/programlist")
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        }
+        throw res;
+      })
+      .then((result: Programs) => {
+        dispatch(addPrograms(result));
+      })
+      .catch((error) => error)
+      .finally(() => {
+        setTimeout(() => {
+          setIsLoading(false);
+        }, 1000);
+      });
+  }, [dispatch]);
+
   return (
     <Layout title="DEMO Streaming">
       <NavBar />
       <HeaderBar headerTitle="Popular Movies" />
-      <Listing programsArr={filteredArr} />
+      {isLoading ? <ContentLoader /> : <Listing programsArr={filteredArr} />}
       <Footer />
     </Layout>
   );

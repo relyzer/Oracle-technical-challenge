@@ -3,14 +3,14 @@ export interface PosterImage {
     url: string;
     width: number;
     height: number;
-  }
+  };
 }
 
 export interface Entry {
   title: string;
   description: string;
   programType: string;
-  images: PosterImage
+  images: PosterImage;
   releaseYear: number;
 }
 
