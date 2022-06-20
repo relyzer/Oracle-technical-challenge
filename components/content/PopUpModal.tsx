@@ -54,14 +54,21 @@ const PopUpModal = ({
   };
 
   return (
-    <div
-      className="modal-container"
-      role="button"
-      tabIndex={0}
-      onClick={handleCloseModal}
-      onKeyDown={handleCloseModal}
-    >
-      <div className="modal">
+    <div className="modal-container z-10">
+      <div
+        className="fixed top-0 left-0 right-0 bottom-0 z-20"
+        role="button"
+        tabIndex={0}
+        onClick={handleCloseModal}
+        onKeyDown={handleCloseModal}
+        aria-label="Close Modal"
+      />
+      <div className="modal z-30">
+        <div className="w-full flex flex-row-reverse">
+          <button className="w-7 h-7 bg-slate-300 rounded-full" type="button" onClick={handleCloseModal}>
+            X
+          </button>
+        </div>
         <div className="relative h-60 w-40 left-1/2 -translate-x-1/2">
           <Image
             src={src}

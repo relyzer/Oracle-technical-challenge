@@ -39,6 +39,7 @@ const Program = ({
         onKeyDown={onClickHandler}
       >
         <Image
+         className="-z-10"
           src={src}
           placeholder="blur"
           blurDataURL="/assets/anika-mikkelson-dWYjy9zIiF8-unsplash.jpg"
