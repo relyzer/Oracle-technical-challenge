@@ -39,5 +39,6 @@ module.exports = {
     "/node_modules/",
     "^.+\\.module\\.(css|sass|scss)$",
   ],
+  modulePathIgnorePatterns: ['cypress'],
   setupFilesAfterEnv: ["<rootDir>/jest-setup.js"],
 };
