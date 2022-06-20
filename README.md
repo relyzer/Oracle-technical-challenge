@@ -38,11 +38,20 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To run Jest,
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+npm test  
+or  
+npm run test  
+```
+
+To run Cypress,
+
+```bash
+npm run cypress
+```
 
 
 ## Legal Attribution
@@ -60,6 +69,7 @@ Microsoft Store and Microsoft Store are trademarks of Microsoft.
 Next.js documentations  
 React documentations  
 React Testing Library and Jest documentations  
+Cypress documentation  
 Redux documentation  
 TailwindCSS documentations  
 Tailwind components (for modal implementation) -  www.tailwindcomponents.com  

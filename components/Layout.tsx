@@ -5,6 +5,8 @@ type Props = {
   children?: ReactNode;
   title?: string;
 };
+// https://stackoverflow.com/questions/52130918/web-api-error-this-request-has-been-blocked-the-content-must-be-served-over-h
+// Upgrade insecure requests to allow http api calls
 
 const Layout = ({ children, title = "Default title" }: Props): JSX.Element => {
   return (
@@ -15,6 +17,7 @@ const Layout = ({ children, title = "Default title" }: Props): JSX.Element => {
         <meta name="theme-color" content="#ffffff" />
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="">
