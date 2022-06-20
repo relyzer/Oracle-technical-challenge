@@ -34,11 +34,11 @@
 
 @layer components {
   .modal-container {
-    @apply bg-slate-800/70 flex justify-center items-center fixed top-0 left-0 right-0 bottom-0 z-10;
+    @apply bg-slate-800/70 flex justify-center items-center fixed top-0 left-0 right-0 bottom-0;
   }
 
   .modal {
-    @apply bg-white p-3 w-[500px] max-w-[100%] m-auto z-20;
+    @apply bg-white p-3 w-[500px] max-w-[100%] m-auto;
   }
 }
 
