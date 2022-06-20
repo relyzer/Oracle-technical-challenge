@@ -11,6 +11,6 @@
     "../node_modules/cypress",
     "../tsconfig.json",
     "../package.json",
-    "./**/*.ts"
+    "./**/*.ts",
   ]
 }
