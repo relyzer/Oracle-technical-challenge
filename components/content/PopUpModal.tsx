@@ -43,9 +43,7 @@ const PopUpModal = ({
       })
       .catch((error) => setFunFactError(error))
       .finally(() => {
-        setTimeout(() => {
-          setisFunFactLoading(false);
-        }, 500);
+        setisFunFactLoading(false);
       });
   }, [releaseYear]);
 
@@ -65,7 +63,11 @@ const PopUpModal = ({
       />
       <div className="modal z-30">
         <div className="w-full flex flex-row-reverse">
-          <button className="w-7 h-7 bg-slate-300 rounded-full" type="button" onClick={handleCloseModal}>
+          <button
+            className="w-7 h-7 bg-slate-300 rounded-full"
+            type="button"
+            onClick={handleCloseModal}
+          >
             X
           </button>
         </div>
