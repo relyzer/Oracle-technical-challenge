@@ -30,11 +30,6 @@ describe("Movies Page component", () => {
     ).toBeInTheDocument();
   });
 
-  // test("should render Listing component", () => {
-  //   render(<Movies />);
-  //   expect(screen.getByTestId("listing-div")).toBeInTheDocument();
-  // });
-
   test("should render Footer component with 'Home' link", () => {
     render(<Movies />);
     expect(

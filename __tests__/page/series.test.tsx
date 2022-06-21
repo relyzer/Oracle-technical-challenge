@@ -30,11 +30,6 @@ describe("Series Page component", () => {
     ).toBeInTheDocument();
   });
 
-  // test("should render Listing component", () => {
-  //   render(<Series />);
-  //   expect(screen.getByTestId("listing-div")).toBeInTheDocument();
-  // });
-
   test("should render Footer component with 'Home' link", () => {
     render(<Series />);
     expect(
