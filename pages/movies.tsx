@@ -19,7 +19,6 @@ const Movies: NextPage = () => {
 
   const [isLoading, setIsLoading] = useState(true);
   const filteredArr = filterProgramType(programs.entries, "movie");
-  dispatch(addMovies(filteredArr));
 
   useEffect(() => {
     fetch("/api/program/programlist")
@@ -37,6 +36,10 @@ const Movies: NextPage = () => {
         setIsLoading(false);
       });
   }, [dispatch]);
+
+  useEffect(() => {
+    dispatch(addMovies(filteredArr));
+  }, [dispatch, filteredArr])
 
   return (
     <Layout title="DEMO Streaming">
